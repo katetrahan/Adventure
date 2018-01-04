@@ -1,10 +1,11 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Game {
     private String currentMessage;
-    private ArrayList<String> scenarios;
+    private List<String> scenarios;
     private String loseMessage;
     private String userInput;
 
@@ -18,6 +19,31 @@ public class Game {
             scenarios.add("You've made it to the mountains and it is deep winter. What do you do? (Type: 'wait for winter to pass' or 'brave the weather')");
             scenarios.add("Your wagon wheel breaks. What do you do? (Type: 'wait for help' or 'search for help')");
             scenarios.add("Welcome to Oregon!!!   :)");
+
+        }
+
+//        public List<String> addScenarioOne () {
+//        scenarios.add("You come across a town before the mountains. What do you do? (Type: 'stop for supplies' or 'continue')");
+//        return scenarios;
+//    }
+//
+//        public List<String> addScenarioTwo () {
+//            scenarios.add("You've made it to the mountains and it is deep winter. What do you do? (Type: 'wait for winter to pass' or 'brave the weather')");
+//            return scenarios;
+//        }
+//
+//        public List<String> addScenarioThree () {
+//        scenarios.add("Your wagon wheel breaks. What do you do? (Type: 'wait for help' or 'search for help')");
+//        return scenarios;
+//    }
+//
+//        public List<String> addScenarioFour () {
+//        scenarios.add("Welcome to Oregon!!!   :)");
+//        return scenarios;
+//    }
+
+        public String getResponse(){
+            return loseMessage;
 
         }
 
@@ -53,10 +79,7 @@ public class Game {
             return currentMessage;
         }
 
-//        public String getResponse(){
-//            return ;
-//
-//        }
+
 
     }
 

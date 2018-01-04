@@ -14,12 +14,12 @@ public class GameTest {
     @Test
     public void newGame_createsScenarioList_Array() {
         Game testGame = new Game("start");
-        assertEquals(3,testGame.getScenarioSize());
+        assertEquals(4,testGame.getScenarioSize());
     }
 
-//    @Test
-//    public void newGame_acceptsInput_String() {
-//        Game testGame = new Game("no");
-//        assertEquals("you died",testGame.getResponse());
-//    }
+    @Test
+    public void newGame_acceptsInput_String() {
+        Game testGame = new Game("no");
+        assertEquals("You are dead.   :(",testGame.getResponse());
+    }
 }
